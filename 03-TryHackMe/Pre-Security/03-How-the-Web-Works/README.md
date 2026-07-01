@@ -2,27 +2,109 @@
 
 ## Overview
 
-This room explained how websites function behind the scenes and how web browsers communicate with web servers.
+This room introduced the fundamentals of how the web functions, covering how users access websites, how browsers communicate with web servers, and the role of HTTP in web communication. It also explored how secure communication is established using HTTPS and provided hands-on experience with constructing HTTP requests.
+
+---
 
 ## Topics Covered
 
-- DNS
-- HTTP
-- Web Servers
-- Client-Server Communication
-- Request and Response Process
+* How Websites Work
+* DNS (Domain Name System)
+* HTTP
+* HTTP Requests & Responses
+* HTTP Methods
+* HTTP Status Codes
+* HTTP Headers
+* Cookies
+* HTTPS
+* Making HTTP Requests
+
+---
 
 ## Key Learnings
 
-### DNS
-The Domain Name System translates human-readable domain names into IP addresses, allowing browsers to locate web servers.
-
-### HTTP
-HTTP is the protocol used for communication between web browsers and web servers. I learned about requests, responses, methods, headers, and status codes.
-
 ### How Websites Work
-A website request involves DNS resolution, establishing a connection with the server, sending an HTTP request, and receiving the server's response before the page is displayed.
+
+When a user enters a URL into a browser, the browser first uses DNS to resolve the domain name into an IP address. It then establishes a connection with the web server, sends an HTTP request, receives an HTTP response, and finally renders the webpage for the user.
+
+---
+
+### DNS (Domain Name System)
+
+DNS translates human-readable domain names into IP addresses, allowing browsers to locate and communicate with web servers.
+
+---
+
+### HTTP (Hypertext Transfer Protocol)
+
+HTTP is the communication protocol used between clients (browsers) and web servers. It defines how requests are sent and how responses are returned.
+
+---
+
+### HTTP Requests & Responses
+
+A client sends an HTTP request to a server, which processes the request and returns an HTTP response containing the requested resource or an appropriate status message.
+
+---
+
+### HTTP Methods
+
+Common HTTP methods include:
+
+* **GET** – Retrieve data from the server.
+* **POST** – Submit data to the server.
+* **PUT** – Update existing resources.
+* **DELETE** – Remove resources.
+
+---
+
+### HTTP Status Codes
+
+Status codes indicate the outcome of a request.
+
+Examples:
+
+* **200 OK** – Request completed successfully.
+* **301 Moved Permanently** – Resource has been permanently redirected.
+* **404 Not Found** – Requested resource could not be found.
+* **500 Internal Server Error** – The server encountered an unexpected error.
+
+---
+
+### HTTP Headers
+
+Headers provide additional information about a request or response, including content type, browser information, authentication details, and caching instructions.
+
+---
+
+### Cookies
+
+Cookies are small pieces of data stored in the browser that help websites remember user sessions, preferences, and authentication information.
+
+---
+
+### HTTPS
+
+HTTPS is the secure version of HTTP. It encrypts communication using TLS/SSL, ensuring confidentiality and integrity of data exchanged between the client and the server.
+
+---
+
+## Practical Exercise
+
+To reinforce these concepts, I used an interactive HTTP request simulator to construct and analyze HTTP requests.
+
+During this exercise, I practiced:
+
+* Sending GET requests
+* Working with URL parameters
+* Observing request and response headers
+* Understanding server responses
+* Interpreting HTTP status codes
+
+This practical exercise helped me visualize how browsers and servers communicate during real web interactions.
+
+---
 
 ## Reflection
 
-This room provided a strong foundation for understanding web applications and prepares me for learning web security concepts.
+This room provided a solid understanding of how websites function and how communication takes place over the web. Learning about DNS, HTTP, HTTPS, cookies, headers, and request-response cycles has given me a strong foundation for studying web application security concepts such as authentication, session management, and common web vulnerabilities in future learning.
